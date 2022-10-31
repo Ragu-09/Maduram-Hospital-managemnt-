@@ -1,6 +1,6 @@
  node('master') {
     try {
-    	def dotnet = '/usr/bin/dotnet'
+    	
     	stage('Checkout') {
         cleanWs()
     	checkout([$class: 'SubversionSCM', additionalCredentials: [], excludedCommitMessages: '', excludedRegions: '', excludedRevprop: '', excludedUsers: '', filterChangelog: false, ignoreDirPropChanges: false, includedRegions: '', locations: [[cancelProcessOnExternalsFail: true, credentialsId: '585fa701-720a-4602-abe6-b977c8773a4c', depthOption: 'infinity', ignoreExternalsOption: true, local: '.', remote: 'https://192.168.1.200/svn/api/Products/Cloud BLM/Application/branches/Experimental branch/BackEnd Services- Unified Database/CloudBLM-AssetManagementService']], quietOperation: true, workspaceUpdater: [$class: 'UpdateUpdater']])
